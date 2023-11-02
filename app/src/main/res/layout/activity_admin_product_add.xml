@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminProductAddActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addProduct_toolbar"
+        android:background="@color/LightSkyBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Products"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="364dp"
+        android:layout_height="566dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="0dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addProduct_toolbar">
+
+        <LinearLayout
+            android:layout_width="313dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:gravity="center"
+                android:text="Add Product Details"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/ad_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_img"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Image Address"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_benefits"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Benefits"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Description"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_direction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Direction Of Use"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="price"
+                android:inputType="number"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_avail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/add_detailProduct"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/DodgerBlue"
+        android:text="Add Product"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

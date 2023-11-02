@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "981649113467",
+    "project_id": "smartmedics-3afbd",
+    "storage_bucket": "smartmedics-3afbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981649113467:android:5c6ac83231b54da06afdde",
+        "android_client_info": {
+          "package_name": "com.example.smartmedics2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981649113467-la8ma1lhq8k664bdij5hc9sj3a14tfbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWVjO3ahTQ7RWU72M9g_NPRLeo85pvZww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981649113467-la8ma1lhq8k664bdij5hc9sj3a14tfbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

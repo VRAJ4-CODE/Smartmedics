@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddAddressActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addAddress_toolbar"
+        android:background="@color/LightSkyBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Address"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="353dp"
+        android:layout_height="484dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="0dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAddress_toolbar">
+
+        <LinearLayout
+            android:layout_width="306dp"
+            android:layout_height="454dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:gravity="center"
+                android:text="Create Address"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ad_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/ad_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Address Lane"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="City"
+                android:inputType="text"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Postal Code"
+                android:inputType="number"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ad_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:padding="8dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/add_address"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Add Address"
+        android:backgroundTint="@color/DodgerBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
